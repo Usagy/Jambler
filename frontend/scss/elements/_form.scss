@@ -1,0 +1,17 @@
+fieldset {
+  border: none;
+}
+.form-control {
+  background: none;
+  border: 0;
+  border-bottom: 2px solid $gray;
+  color: $gray;
+  padding: 0 20px;
+  height: 40px;
+  line-height: 38px;
+  font-size: $font-size-larger;
+  &:focus {
+    outline: none;
+  }
+}
+

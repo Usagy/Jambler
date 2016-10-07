@@ -1,0 +1,23 @@
+.swiper-container {
+  /*width: 600px;
+  height: 300px;*/
+  h2 {
+    margin: 0 0 0 15px;
+  }
+  .swiper-slide {
+    position: relative;
+    .slide-text {
+      content: '';
+      position: absolute;
+      z-index: -1;
+      top: 0;
+      right: 0;
+      width: 160px;
+      height: 120px;
+      padding: 17px 20px;
+      //background: $brand-color-dark;
+      background: #000;
+      border-radius: 3px;
+    }
+  }
+}

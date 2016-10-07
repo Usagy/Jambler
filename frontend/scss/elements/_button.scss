@@ -1,0 +1,42 @@
+.btn {
+  display: inline-block;
+  padding: 0 20px;
+  height: 30px;
+  line-height: 30px;
+  border-radius: $border-radius-base;
+  border: none;
+  background: none;
+  text-decoration: none;
+  text-align: center;
+  &:active,
+  &:focus {
+    outline: none;
+  }
+  &-block {
+    width: 100%;
+  }
+  &-lg {
+    height: 50px;
+    line-height: 50px;
+  }
+  &-primary {
+    background: $brand-color;
+    color: $gray-xlight;
+  }
+  &-secondary {
+    background: $warning-color;
+    color: $gray-dark;
+  }
+  &-fb {
+    background: $fb-color;
+    color: $gray-xlight;
+  }
+  &-google {
+    background: $google-color;
+    color: $gray-xlight;
+  }
+  &-vk {
+    background: $vk-color;
+    color: $gray-xlight;
+  }
+}

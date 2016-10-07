@@ -1,0 +1,69 @@
+h2, .h2 {
+  font-size: $font-size-larger;
+  position: relative;
+  padding-top: 23px;
+  margin-bottom: 60px;
+  text-transform: uppercase;
+  &:before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 40px;
+    height: 3px;
+    background: #000;
+  }
+}
+h3 {
+  font-size: $font-size-smaller;
+  text-transform: uppercase;
+  font-family: $font-family-bold;
+  margin-bottom: 25px;
+}
+.bold {
+  font-family: $font-family-bold;
+}
+.list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+h4 {
+  font-family: $font-family-regular;
+  font-size: $font-size-small;
+  color: $brand-color;
+}
+
+h5 {
+  font-family: $font-family-regular;
+  font-size: $font-size-small;
+  text-transform: uppercase;
+  color: $gray;
+}
+
+.text {
+  &-default {
+    color: $gray;
+  }
+  &-alarm {
+    color: $alarm-color;
+  }
+  &-important {
+    color: $gray-dark;
+  }
+}
+
+
+.link {
+  color: $brand-color;
+  text-decoration: none;
+  font-size: $font-size-small;
+  &:hover {
+    text-decoration: underline;
+  }
+}
+.text-box {
+  font-family: $font-family-regular;
+  font-size: $font-size-small;
+  color: $gray-xlight;
+}

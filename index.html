@@ -4,21 +4,24 @@
 		<meta charset="utf-8" />
 		<title>Jambler</title>
 		<!--<link media="all" rel="stylesheet" href="css/all.css" type="text/css" />-->
-		<link rel="stylesheet" type="text/css" href="css/normalize.css" />
+		<!--<link rel="stylesheet" type="text/css" href="css/normalize.css" />
 		<link rel="stylesheet" type="text/css" href="css/slick.css"/>
-		<link rel="stylesheet" type="text/css" href="css/slick-theme.css"/>
-		<link rel="stylesheet" type="text/css" href="css/all.css" />
-		<meta name="viewport" content="width=device-width, initial-scale=1.0", user-scalable=no>
-		<script defer type="text/javascript" src="js/jquery-3.1.0.min.js"></script>		
-		<script type="text/javascript" src="js/jquery.sidr.min.js"></script>
-		<script defer type="text/javascript" src="js/slick.min.js"></script>
-		<script defer type="text/javascript" src="js/main.js"></script>	
+		<link rel="stylesheet" type="text/css" href="css/slick-theme.css"/>-->
+		<link rel="stylesheet" type="text/css" href="normalize.css" />
+		<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.css" />
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/3.3.1/css/swiper.min.css">
+		<link rel="stylesheet" type="text/css" href="frontend/css/style.css" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+		<!--<script defer type="text/javascript" src="frontend/js/jquery-3.1.0.min.js"></script>
+		<script defer type="text/javascript" src="frontend/js/main.js"></script>-->
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/3.3.1/js/swiper.min.js"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/3.3.1/js/swiper.jquery.min.js"></script>
 	</head>
 	<body>	
 		<div class="banner">
 			<div class="wrapper">
 				<a href="#" class="banner__logo">
-					<img src="img/logo1.png" alt="" />
+					<img src="frontend/img/logo1.png" alt="" />
 				</a>
 				<div class="banner__text">
 					<p class="text__core">Главное событие - финал че 2016
@@ -27,38 +30,31 @@
 					<p><a href="#" class="text__yellow">Узнай как попасть в этот турнир?</a></p>
 				</div>
 				<a href="#" class="banner__logo euro">
-					<img src="img/euro.png" alt="" />
+					<img src="frontend/img/euro.png" alt="" />
 				</a>
 			</div>
 		</div>
 		<div class="start">
 			<div class="wrapper">
 				<header class="header">
-					<a href="#" class="header__logo">Jambler</a>
-					<div class="header__nav">
-						<nav class="nav__list">
-							<ul>
-								<li><a href="#" class="nav__item">Посмотреть все турниры</a></li>
-								<li><a href="#" class="nav__item">Как играть?</a></li>
-							</ul>
-						</nav>
-						<a href="#" class="nav__item yellow">Зарегестрироваться</a>
-						<a href="#" class="nav__item green green-480">Войти</a>
-					</div>
-					<a href="#" class="mobile-menu green">Меню</a>
+					<a href="#" class="btn btn-primary">Меню</a>
+					<h1><a href="#" class="header__logo">Jambler</a></h1>
+					<a href="#" class="btn btn-signIn">Войти</a>
 				</header>
 				<div class="start__jambler">
 					<div class="jambler__play">
-						<p class="text__core title">докажи, что ты лучше
+						<h2>докажи, что ты лучше
 						всех разбираешься
 						в футболе. прими участие
-						в <span class="bold">уникальных</span> турнирах</p>
-						<a href="#" class="nav__item green">Начать игру</a>
+						в <span class="bold">уникальных</span> турнирах</h2>
+						<a href="#" class="btn btn-primary btn-lg btn-block">Начать игру</a>
 					</div>
 					<div class="jambler__what">						
 						<div class="jambler__video">
-							<h5>Что такое Jambler?</h5>
-							<iframe width="280" height="160" src="https://www.youtube.com/embed/n9qYjzE8jS4" frameborder="0" allowfullscreen></iframe>
+							<h3>Что такое Jambler?</h3>
+							<div class="video__holder">
+								<iframe width="100%" height="auto" src="https://www.youtube.com/embed/n9qYjzE8jS4" frameborder="0" allowfullscreen></iframe>
+							</div>
 						</div>
 					</div>
 				</div>
@@ -67,24 +63,24 @@
 		<div class="order">
 			<div class="wrapper">
 				<div class="order__img">
-					<img src="img/phone.png" alt="" />
+					<img src="frontend/img/phone.png" alt="" />
 				</div>
 				<div class="order__list">
-					<ul>
-						<li class="text__core title one">
+					<ul class="list">
+						<li class="h2 one">
 						Регистрируйся на jambler
 						или входи с помощью
 						аккаунта соц. сетей</li>
-						<li class="text__core title two">
+						<li class="h2 two">
 						Выбирай турнир на матч,
 						который тебя интересует
 						и регистрируйся в нем</li>
-						<li class="text__core title three">
+						<li class="h2 three">
 						Следи за ходом матча
 						и предсказывай <span class="bold">события</span>
 						в определенные тобой
 						отрезки времени</li>
-						<li class="text__core title four">
+						<li class="h2 four">
 						здесь играют все желающие
 						твоя задача набрать большее
 						количество очков и занять
@@ -94,61 +90,68 @@
 			</div>
 		</div>
 		<div class="slide-box">
-			<div class="carousel">
-				<div class="carousel__slide">	
-					<div class="carousel__image">
-						<img src="img/slide.png" alt=""/>
-					</div>		
-					<div class="carousel__text">
-						<p class="text__core title">У каждого своя стратегия</p>
+			<div class="swiper-container">
+				<!-- Additional required wrapper -->
+				<h2>У каждого своя стратегия</h2>
+				<div class="swiper-wrapper">
+					<!-- Slides -->
+					<div class="swiper-slide">
+						<img src="frontend/img/slide1.png" alt="" />
+						<div class="slide-text">
+							<p class="text-box">Очень грязная игра,
+								думаю, что одна из
+								команд заработает
+								штрафной удар в
+								течение 2-х минут</p>
+						</div>
+					</div>
+					<div class="swiper-slide">
+						<img src="frontend/img/slide2.png" alt="" />
+					</div>
+					<div class="swiper-slide">
+						<img src="frontend/img/slide3.png" alt="" />
+					</div>
+					<div class="swiper-slide">
+						<img src="frontend/img/slide4.png" alt="" />
+					</div>
+					<div class="swiper-slide">
+						<img src="frontend/img/slide5.png" alt="" />
+					</div>
+					<div class="swiper-slide">
+						<img src="frontend/img/slide6.png" alt="" />
 					</div>
 				</div>
-				<div class="carousel__slide">	
-					<div class="carousel__image">
-						<img src="img/slide.png" alt=""/>
-					</div>		
-					<div class="carousel__text">
-						<p class="text__core title">У каждого своя стратегия</p>
-					</div>
-				</div>
-				<div class="carousel__slide">	
-					<div class="carousel__image">
-						<img src="img/slide.png" alt=""/>
-					</div>		
-					<div class="carousel__text">
-						<p class="text__core title">У каждого своя стратегия</p>
-					</div>
-				</div>
-				<div class="carousel__slide">	
-					<div class="carousel__image">
-						<img src="img/slide.png" alt=""/>
-					</div>		
-					<div class="carousel__text">
-						<p class="text__core title">У каждого своя стратегия</p>
-					</div>
-				</div>
+				<!-- If we need pagination -->
+				<div class="swiper-pagination"></div>
+
+				<!-- If we need navigation buttons -->
+				<div class="swiper-button-prev"></div>
+				<div class="swiper-button-next"></div>
+
+				<!-- If we need scrollbar -->
+				<div class="swiper-scrollbar"></div>
 			</div>
 		</div>
 		<div class="participant">
 			<div class="wrapper">
 				<div class="participant__text">
-					<p class="text__core title">Чем больше участников
+					<h2>Чем больше участников
 					тем выше призовые в турнирах.
 					Приглашай друзей на jambler,
-					выигрывай больше</p>
+					выигрывай больше</h2>
 				</div>
 				<div class="participant__invite">
-					<div class="invite__from">
-						<a href="#" class="button facebook">Пригласить друзей через Facebook</a>
-						<span>+1.6k</span>
+					<div class="invite__btn">
+						<a href="#" class="btn btn-block btn-fb">Пригласить друзей через Facebook</a>
+						<span class="text">+1.6k</span>
 					</div>
-					<div class="invite__from">
-						<a href="#" class="button google">Пригласить друзей через Google+</a>
-						<span>+568</span>
+					<div class="invite__btn">
+						<a href="#" class="btn btn-block btn-google">Пригласить друзей через Google+</a>
+						<span class="text">+568</span>
 					</div>
-					<div class="invite__from">
-						<a href="#" class="button vk">Пригласить друзей через Vkontakte</a>
-						<span>+18.4k</span>
+					<div class="invite__btn">
+						<a href="#" class="btn btn-block btn-vk">Пригласить друзей через Vkontakte</a>
+						<span class="text">+18.4k</span>
 					</div>
 				</div>
 			</div>
@@ -156,266 +159,277 @@
 		<div class="playing">
 			<div class="wrapper">
 				<div class="playing__text">
-					<p class="text__core title">Присоединяйся к уже
+					<h2>Присоединяйся к уже
 					начавшимся турнирам
 					или зарегистрируйся
-					на предстоящие.</p>
+					на предстоящие.</h2>
 				</div>
 				<div class="playing__table">
 					<div class="table__row">
 						<div class="left-part">
 							<div class="headline">
-								<p class="marine">Live. Spain/Primera Division. Barselona - Real Madrid. € 100 Gtd</p>
+								<i class="fa fa-futbol-o" aria-hidden="true"></i>
+								<h4>
+									Prematch. England/Premiere League. Arsenal -
+									Manchester Untd. Satellit. 2 tickets Gtd
+								</h4>
 							</div>
 							<div class="records">
 								<div class="records__item">
-									<p class="grey">Start time:</p>
-									<span class="red">00:07:24</span>
+									<p class="text-default">Start time:</p>
+									<span class="text-alarm">In-play 07:24</span>
 								</div>
 								<div class="records__item">
-									<p class="grey">Buy-in:</p>
-									<span class="black">freeroll</span>
+									<p class="text-default">Buy-in:</p>
+									<span class="text-important">&#8364; 1.10</span>
+								</div>
+								<div class="records__item mobile-hidden">
+									<p class="text-default">Prize Pool:</p>
+									<span class="text-important">&#8364; 100 Gtd</span>
 								</div>
 								<div class="records__item">
-									<p class="grey">Prize Pool:</p>
-									<span class="black">&#8364; 100 Gtd</span>
+									<p class="text-default">Entires:</p>
+									<span class="text-important">41/500</span>
 								</div>
-								<div class="records__item hidden-390">
-									<p class="grey">Entires:</p>
-									<span class="black">41/500</span>
-								</div>
-								<div class="records__item hidden-480">
-									<p class="grey">Status:</p>
-									<span class="black">Registration</span>
+								<div class="records__item mobile-hidden">
+									<p class="text-default">Status:</p>
+									<span class="text-important">Registration</span>
 								</div>									
 							</div>
 						</div>
 						<div class="right-part">								
-							<a href="#" class="nav__item green">Начать игру</a>
+							<a href="#" class="btn btn-primary">Начать игру</a>
 						</div>
 					</div>
 					<div class="table__row">
 						<div class="left-part">
 							<div class="headline">
-								<p class="marine">Live. Spain/Primera Division. Barselona - Real Madrid. € 100 Gtd</p>
+								<i class="fa fa-futbol-o" aria-hidden="true"></i>
+								<h4>Live. Spain/Primera Division. Barselona - Real Madrid. € 100 Gtd</h4>
 							</div>
 							<div class="records">
 								<div class="records__item">
-									<p class="grey">Start time:</p>
-									<span class="red">00:07:24</span>
+									<p class="text-default">Start time:</p>
+									<span class="text-alarm">00:07:24</span>
 								</div>
 								<div class="records__item">
-									<p class="grey">Buy-in:</p>
-									<span class="black">freeroll</span>
+									<p class="text-default">Buy-in:</p>
+									<span class="text-important">freeroll</span>
+								</div>
+								<div class="records__item mobile-hidden">
+									<p class="text-default">Prize Pool:</p>
+									<span class="text-important">&#8364; 100 Gtd</span>
 								</div>
 								<div class="records__item">
-									<p class="grey">Prize Pool:</p>
-									<span class="black">&#8364; 100 Gtd</span>
+									<p class="text-default">Entires:</p>
+									<span class="text-important">41/500</span>
 								</div>
-								<div class="records__item hidden-390">
-									<p class="grey">Entires:</p>
-									<span class="black">41/500</span>
-								</div>
-								<div class="records__item hidden-480">
-									<p class="grey">Status:</p>
-									<span class="black">Registration</span>
+								<div class="records__item mobile-hidden">
+									<p class="text-default">Status:</p>
+									<span class="text-important">Registration</span>
 								</div>									
 							</div>
 						</div>
 						<div class="right-part">								
-							<a href="#" class="nav__item green">Начать игру</a>
+							<a href="#" class="btn btn-primary">Начать игру</a>
 						</div>
 					</div>
 					<div class="table__row">
 						<div class="left-part">
 							<div class="headline">
-								<p class="marine">Live. Spain/Primera Division. Barselona - Real Madrid. € 100 Gtd</p>
+								<i class="fa fa-futbol-o" aria-hidden="true"></i>
+								<h4>Live. Spain/Primera Division. Barselona - Real Madrid. € 100 Gtd</h4>
 							</div>
 							<div class="records">
 								<div class="records__item">
-									<p class="grey">Start time:</p>
-									<span class="red">00:07:24</span>
+									<p class="text-default">Start time:</p>
+									<span class="text-alarm">00:07:24</span>
 								</div>
 								<div class="records__item">
-									<p class="grey">Buy-in:</p>
-									<span class="black">freeroll</span>
+									<p class="text-default">Buy-in:</p>
+									<span class="text-important">freeroll</span>
+								</div>
+								<div class="records__item mobile-hidden">
+									<p class="text-default">Prize Pool:</p>
+									<span class="text-important">&#8364; 100 Gtd</span>
 								</div>
 								<div class="records__item">
-									<p class="grey">Prize Pool:</p>
-									<span class="black">&#8364; 100 Gtd</span>
+									<p class="text-default">Entires:</p>
+									<span class="text-important">41/500</span>
 								</div>
-								<div class="records__item hidden-390">
-									<p class="grey">Entires:</p>
-									<span class="black">41/500</span>
-								</div>
-								<div class="records__item hidden-480">
-									<p class="grey">Status:</p>
-									<span class="black">Registration</span>
+								<div class="records__item mobile-hidden">
+									<p class="text-default">Status:</p>
+									<span class="text-important">Registration</span>
 								</div>									
 							</div>
 						</div>
 						<div class="right-part">								
-							<a href="#" class="nav__item green">Начать игру</a>
+							<a href="#" class="btn btn-primary">Начать игру</a>
 						</div>
 					</div>
 					<div class="table__row">
 						<div class="left-part">
 							<div class="headline">
-								<p class="marine">Live. Spain/Primera Division. Barselona - Real Madrid. € 100 Gtd</p>
+								<i class="fa fa-futbol-o" aria-hidden="true"></i>
+								<h4>Live. Spain/Primera Division. Barselona - Real Madrid. € 100 Gtd</h4>
 							</div>
 							<div class="records">
 								<div class="records__item">
-									<p class="grey">Start time:</p>
-									<span class="red">00:07:24</span>
+									<p class="text-default">Start time:</p>
+									<span class="text-alarm">00:07:24</span>
 								</div>
 								<div class="records__item">
-									<p class="grey">Buy-in:</p>
-									<span class="black">freeroll</span>
+									<p class="text-default">Buy-in:</p>
+									<span class="text-important">freeroll</span>
+								</div>
+								<div class="records__item mobile-hidden">
+									<p class="text-default">Prize Pool:</p>
+									<span class="text-important">&#8364; 100 Gtd</span>
 								</div>
 								<div class="records__item">
-									<p class="grey">Prize Pool:</p>
-									<span class="black">&#8364; 100 Gtd</span>
+									<p class="text-default">Entires:</p>
+									<span class="text-important">41/500</span>
 								</div>
-								<div class="records__item hidden-390">
-									<p class="grey">Entires:</p>
-									<span class="black">41/500</span>
-								</div>
-								<div class="records__item hidden-480">
-									<p class="grey">Status:</p>
-									<span class="black">Registration</span>
+								<div class="records__item mobile-hidden">
+									<p class="text-default">Status:</p>
+									<span class="text-important">Registration</span>
 								</div>									
 							</div>
 						</div>
 						<div class="right-part">								
-							<a href="#" class="nav__item green">Начать игру</a>
+							<a href="#" class="btn btn-primary">Начать игру</a>
 						</div>
 					</div>
 					<div class="table__row">
 						<div class="left-part">
 							<div class="headline">
-								<p class="marine">Live. Spain/Primera Division. Barselona - Real Madrid. € 100 Gtd</p>
+								<i class="fa fa-futbol-o" aria-hidden="true"></i>
+								<h4>Live. Spain/Primera Division. Barselona - Real Madrid. € 100 Gtd</h4>
 							</div>
 							<div class="records">
 								<div class="records__item">
-									<p class="grey">Start time:</p>
-									<span class="red">00:07:24</span>
+									<p class="text-default">Start time:</p>
+									<span class="text-alarm">00:07:24</span>
 								</div>
 								<div class="records__item">
-									<p class="grey">Buy-in:</p>
-									<span class="black">freeroll</span>
+									<p class="text-default">Buy-in:</p>
+									<span class="text-important">freeroll</span>
+								</div>
+								<div class="records__item mobile-hidden">
+									<p class="text-default">Prize Pool:</p>
+									<span class="text-important">&#8364; 100 Gtd</span>
 								</div>
 								<div class="records__item">
-									<p class="grey">Prize Pool:</p>
-									<span class="black">&#8364; 100 Gtd</span>
+									<p class="text-default">Entires:</p>
+									<span class="text-important">41/500</span>
 								</div>
-								<div class="records__item hidden-390">
-									<p class="grey">Entires:</p>
-									<span class="black">41/500</span>
-								</div>
-								<div class="records__item hidden-480">
-									<p class="grey">Status:</p>
-									<span class="black">Registration</span>
+								<div class="records__item mobile-hidden">
+									<p class="text-default">Status:</p>
+									<span class="text-important">Registration</span>
 								</div>									
 							</div>
 						</div>
 						<div class="right-part">								
-							<a href="#" class="nav__item green">Начать игру</a>
+							<a href="#" class="btn btn-primary">Начать игру</a>
 						</div>
 					</div>
 					<div class="table__row">
 						<div class="left-part">
 							<div class="headline">
-								<p class="marine">Live. Spain/Primera Division. Barselona - Real Madrid. € 100 Gtd</p>
+								<i class="fa fa-futbol-o" aria-hidden="true"></i>
+								<h4>Live. Spain/Primera Division. Barselona - Real Madrid. € 100 Gtd</h4>
 							</div>
 							<div class="records">
 								<div class="records__item">
-									<p class="grey">Start time:</p>
-									<span class="red">00:07:24</span>
+									<p class="text-default">Start time:</p>
+									<span class="text-alarm">00:07:24</span>
 								</div>
 								<div class="records__item">
-									<p class="grey">Buy-in:</p>
-									<span class="black">freeroll</span>
+									<p class="text-default">Buy-in:</p>
+									<span class="text-important">freeroll</span>
+								</div>
+								<div class="records__item mobile-hidden">
+									<p class="text-default">Prize Pool:</p>
+									<span class="text-important">&#8364; 100 Gtd</span>
 								</div>
 								<div class="records__item">
-									<p class="grey">Prize Pool:</p>
-									<span class="black">&#8364; 100 Gtd</span>
+									<p class="text-default">Entires:</p>
+									<span class="text-important">41/500</span>
 								</div>
-								<div class="records__item hidden-390">
-									<p class="grey">Entires:</p>
-									<span class="black">41/500</span>
-								</div>
-								<div class="records__item hidden-480">
-									<p class="grey">Status:</p>
-									<span class="black">Registration</span>
+								<div class="records__item mobile-hidden">
+									<p class="text-default">Status:</p>
+									<span class="text-important">Registration</span>
 								</div>									
 							</div>
 						</div>
 						<div class="right-part">								
-							<a href="#" class="nav__item green">Начать игру</a>
+							<a href="#" class="btn btn-primary">Начать игру</a>
 						</div>
 					</div>
 					<div class="table__row">
 						<div class="left-part">
 							<div class="headline">
-								<p class="marine">Live. Spain/Primera Division. Barselona - Real Madrid. € 100 Gtd</p>
+								<i class="fa fa-futbol-o" aria-hidden="true"></i>
+								<h4>Live. Spain/Primera Division. Barselona - Real Madrid. € 100 Gtd</h4>
 							</div>
 							<div class="records">
 								<div class="records__item">
-									<p class="grey">Start time:</p>
-									<span class="red">00:07:24</span>
+									<p class="text-default">Start time:</p>
+									<span class="text-alarm">00:07:24</span>
 								</div>
 								<div class="records__item">
-									<p class="grey">Buy-in:</p>
-									<span class="black">freeroll</span>
+									<p class="text-default">Buy-in:</p>
+									<span class="text-important">freeroll</span>
+								</div>
+								<div class="records__item mobile-hidden">
+									<p class="text-default">Prize Pool:</p>
+									<span class="text-important">&#8364; 100 Gtd</span>
 								</div>
 								<div class="records__item">
-									<p class="grey">Prize Pool:</p>
-									<span class="black">&#8364; 100 Gtd</span>
+									<p class="text-default">Entires:</p>
+									<span class="text-important">41/500</span>
 								</div>
-								<div class="records__item hidden-390">
-									<p class="grey">Entires:</p>
-									<span class="black">41/500</span>
-								</div>
-								<div class="records__item hidden-480">
-									<p class="grey">Status:</p>
-									<span class="black">Registration</span>
+								<div class="records__item mobile-hidden">
+									<p class="text-default">Status:</p>
+									<span class="text-important">Registration</span>
 								</div>									
 							</div>
 						</div>
 						<div class="right-part">								
-							<a href="#" class="nav__item green">Начать игру</a>
+							<a href="#" class="btn btn-primary">Начать игру</a>
 						</div>
 					</div>
 					<div class="table__row">
 						<div class="left-part">
 							<div class="headline">
-								<p class="marine">Live. Spain/Primera Division. Barselona - Real Madrid. € 100 Gtd</p>
+								<i class="fa fa-futbol-o" aria-hidden="true"></i>
+								<h4>Live. Spain/Primera Division. Barselona - Real Madrid. € 100 Gtd</h4>
 							</div>
 							<div class="records">
 								<div class="records__item">
-									<p class="grey">Start time:</p>
-									<span class="red">00:07:24</span>
+									<p class="text-default">Start time:</p>
+									<span class="text-alarm">00:07:24</span>
 								</div>
 								<div class="records__item">
-									<p class="grey">Buy-in:</p>
-									<span class="black">freeroll</span>
+									<p class="text-default">Buy-in:</p>
+									<span class="text-important">freeroll</span>
+								</div>
+								<div class="records__item mobile-hidden">
+									<p class="text-default">Prize Pool:</p>
+									<span class="text-important">&#8364; 100 Gtd</span>
 								</div>
 								<div class="records__item">
-									<p class="grey">Prize Pool:</p>
-									<span class="black">&#8364; 100 Gtd</span>
+									<p class="text-default">Entires:</p>
+									<span class="text-important">41/500</span>
 								</div>
-								<div class="records__item hidden-390">
-									<p class="grey">Entires:</p>
-									<span class="black">41/500</span>
-								</div>
-								<div class="records__item hidden-480">
-									<p class="grey">Status:</p>
-									<span class="black">Registration</span>
+								<div class="records__item mobile-hidden">
+									<p class="text-default">Status:</p>
+									<span class="text-important">Registration</span>
 								</div>									
 							</div>
 						</div>
 						<div class="right-part">								
-							<a href="#" class="nav__item green">Начать игру</a>
+							<a href="#" class="btn btn-primary">Начать игру</a>
 						</div>
 					</div>
 					<div class="table__row results">
@@ -427,133 +441,125 @@
 		<div class="account">
 			<div class="wrapper">
 				<div class="account__new">
-					<p class="text__core title">Создай аккаунт на jambler
+					<h2>Создай аккаунт на jambler
 					и начинай выигрывать уже
-					сегодня.</p>
+					сегодня.</h2>
 					<form action="#">
 						<fieldset>			
 							<div class="row">
-								<input type="text" required name="nickname" placeholder="Никнейм" />
+								<input type="text" class="form-control" placeholder="Никнейм" />
 							</div>		
 							<div class="row">
-								<input type="text" required name="mail" placeholder="Адрес эл. почты" />
+								<input type="text" class="form-control" placeholder="Адрес эл. почты" />
 							</div>		
 							<div class="row">
-								<input type="password" required name="password" maxlength="7" placeholder="Пароль" />
+								<input type="password" class="form-control" placeholder="Пароль" />
 							</div>
 							<div class="row">
-								<input type="submit" class="submit green" value="Создать Аккаунт"/>
+								<input type="submit" class="btn btn-block btn-lg btn-primary" value="Создать Аккаунт"/>
 							</div>
 						</fieldset>
 					</form>						
 				</div>
 				<div class="account__network">
-					<p class="text__core title">Либо зарегистрируйся
+					<h2>Либо зарегистрируйся
 					с помощью аккаунта в
-					социальной сети</p>
-					<a href="#" class="button facebook">Facebook</a>
-					<a href="#" class="button google">Google+</a>
-					<a href="#" class="button vk">Vkontakte</a>
+					социальной сети</h2>
+					<a href="#" class="btn btn-lg btn-block btn-fb">Facebook</a>
+					<a href="#" class="btn btn-lg btn-block btn-google">Google+</a>
+					<a href="#" class="btn btn-lg btn-block btn-vk">Vkontakte</a>
 				</div>
 			</div>
 		</div>
 		<footer class="footer">
-			<div class="wrapper dekstop">
-				<div class="footer__info">
-					<div class="info__item">					
+			<div class="wrapper">
+				<div class="footer__top">
+					<div class="footer__social">
 						<a href="#" class="footer__logo">
-							<img src="img/footer-logo.png" alt="" />
-						</a>					
-						<div class="info__rules">
-							<a href="#" class="marine">Terms of Use</a>					
-							<a href="#" class="marine">Privacy Policy</a>
+							<img src="frontend/img/footer-logo.png" alt="" />
+						</a>
+						<div class="social__network">
+							<a href="#" class="sprite fb-footer">Facebook</a>
+							<a href="#" class="sprite g-footer">Google</a>
+							<a href="#" class="sprite vk-footer">Vkontakte</a>
 						</div>
 					</div>
-					<div class="info__item">
-						<h4>Help</h4>
-						<ul>
-							<li><a href="#" class="marine">Support</a></li>
-							<li><a href="#" class="marine">How to play</a></li>
-							<li><a href="#" class="marine">FAQ</a></li>
-						</ul>
-					</div>
-					<div class="info__item">
-						<h4>Partners</h4>
-						<ul>
-							<li><a href="#" class="marine">Promotions</a></li>
-							<li><a href="#" class="marine">Referals</a></li>
-							<li><a href="#" class="marine">Affiliates</a></li>
-						</ul>
-					</div>
-				</div>
-				<div class="footer__social">
-					<div class="social__network">
-						<span>Follow us:</span>
-						<a href="#" class="sprite fb-footer">Facebook</a>
-						<a href="#" class="sprite g-footer">Google</a>					
-						<a href="#" class="sprite vk-footer">Vkontakte</a>
-					</div>
-					<div class="social__downloads">
-						<a href="#" class="button btn-footer">App Store</a>
-						<a href="#" class="button btn-footer gplay">Google Play</a>
-					</div>
-				</div>
-			</div>
-			<div class="footer-mobile">			
-				<div class="wrapper">
-					<div class="mobile__top">
-						<div class="top__icon">
-							<a href="#" class="footer__logo">
-								<img src="img/footer-logo.png" alt="" />
-							</a>
-							<div class="social__network">
-								<a href="#" class="sprite fb-footer">Facebook</a>
-								<a href="#" class="sprite g-footer">Google</a>					
-								<a href="#" class="sprite vk-footer">Vkontakte</a>
-							</div>
-						</div>
-						<div class="info__item">							
-							<ul>
-								<li><h4>Help</h4></li>
-								<li><a href="#" class="marine">Support</a></li>
-								<li><a href="#" class="marine">How to play</a></li>
-								<li><a href="#" class="marine">FAQ</a></li>
+					<div class="footer__lists">
+						<div class="info__item">
+							<ul class="list">
+								<li><h5>Help</h5></li>
+								<li><a href="#" class="link">Support</a></li>
+								<li><a href="#" class="link">How to play</a></li>
+								<li><a href="#" class="link">FAQ</a></li>
 							</ul>
 						</div>
-						<div class="info__item">							
-							<ul>
-								<li><h4>Partners</h4></li>
-								<li><a href="#" class="marine">Promotions</a></li>
-								<li><a href="#" class="marine">Referals</a></li>
-								<li><a href="#" class="marine">Affiliates</a></li>
+						<div class="info__item">
+							<ul class="list">
+								<li><h5>Partners</h5></li>
+								<li><a href="#" class="link">Promotions</a></li>
+								<li><a href="#" class="link">Referals</a></li>
+								<li><a href="#" class="link">Affiliates</a></li>
 							</ul>
 						</div>
-						<div class="info__item">							
-							<ul>
-								<li><h4>Lisence</h4></li>
-								<li><a href="#" class="marine">Terms of Use</a></li>					
-								<li><a href="#" class="marine">Privacy Policy</a></li>
+						<div class="info__item">
+							<ul class="list">
+								<li><h5>Lisence</h5></li>
+								<li><a href="#" class="link">Terms of Use</a></li>
+								<li><a href="#" class="link">Privacy Policy</a></li>
 							</ul>
 						</div>
+					</div>
+					<div class="footer__pays">
 						<div class="paycards">
-							<a href="#" class="sprite visa">Visa</a>
-							<a href="#" class="sprite mastercard">Mastercard</a>					
-							<a href="#" class="sprite skrill">Skrill</a>
-							<a href="#" class="sprite neteller">Neteller</a>
-							<a href="#" class="sprite paypal">Paypal</a>
-						</div>
-					</div>
-					<div class="mobile__bottom">
-						<div class="social__downloads">
-							<a href="#" class="button btn-footer">App Store</a>
-							<a href="#" class="button btn-footer gplay">Google Play</a>
-						</div>
-						<div class="top-return">
-							<a href="#" class="">Go to Top</a>
+							<a href="#" class="paycards__item">
+								<img src="frontend/img/visa.png" alt="" />
+							</a>
+							<a href="#" class="paycards__item">
+								<img src="frontend/img/master.png" alt="" />
+							</a>
+							<a href="#" class="paycards__item">
+								<img src="frontend/img/scrill.png" alt="" />
+							</a>
+							<a href="#" class="paycards__item">
+								<img src="frontend/img/neteller.png" alt="" />
+							</a>
+							<a href="#" class="paycards__item">
+								<img src="frontend/img/paypal.png" alt="" />
+							</a>
 						</div>
 					</div>
 				</div>
 			</div>
 		</footer>
+		<div class="footer__bottom">
+			<div class="wrapper">
+				<div class="footer__apps">
+					<a href="#" class="btn btn-footer">App Store</a>
+					<a href="#" class="btn btn-footer gplay">Google Play</a>
+				</div>
+				<div class="top-button">
+					<a href="#" class="btn-top link">Go to Top</a>
+				</div>
+			</div>
+		</div>
+		<script>
+			var mySwiper = new Swiper ('.swiper-container', {
+				// Optional parameters
+				//direction: 'horizontal',
+				//loop: true,
+				//spaceBetween: 0,
+
+				// If we need pagination
+				pagination: '.swiper-pagination',
+
+				// Navigation arrows
+				//nextButton: '.swiper-button-next',
+				//prevButton: '.swiper-button-prev',
+				paginationClickable: true,
+
+				// And if we need scrollbar
+				//scrollbar: '.swiper-scrollbar',
+			})
+		</script>
 	</body>
 </html>
